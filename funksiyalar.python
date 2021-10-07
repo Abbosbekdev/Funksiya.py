@@ -1,0 +1,367 @@
+#1-masala
+
+"""sonni kubini topadi"""
+
+# def darajani_hisobla(n) :
+#     return n*n*n
+# print(darajani_hisobla(2))
+
+#2-masala
+import math
+
+"""sonni kvadrati,kubi ,4-darajasini topadi"""
+
+# def daraja_top(a) :
+#     n = a*a
+#     k = a*a*a
+#     m = a*a*a*a
+#     return n,k,m
+# print(daraja_top(2))
+
+#3-masala
+
+"""sonni o'rta arifmetigi va geometrigi"""
+
+# def orta_top(a,b) :
+#     m = a+b/2
+#     k = math.sqrt(a*b)
+#     return m,k
+# print(orta_top(4,16))
+
+#4-masala
+
+"""uchburchak yuzasini topadigan funksiya"""
+
+# def uchburchak(a) :
+#     peremetr = 3*a
+#     yuza = a*a*math.sqrt(3)/4
+# print(uchburchak(2))
+
+#5-masala
+
+"""tortburchak peremetri va yuzi"""
+
+# def yuz_hisobla(x1,y1,x2,y2) :
+#     p = 2*(math.fabs(x1)+math.fabs(x2)+math.fabs(y1)+math.fabs(y2))
+#     s = (math.fabs(x1)+math.fabs(x2))*(math.fabs(y1)+math.fabs(y2))
+#     return s,p
+# x1,y1 = int(input('x1 = ')),int(input('y1 = '))
+# x2,y2 = int(input('x2 = ')),int(input('y2 = '))
+# print(yuz_hisobla(x1,y1,x2,y2))
+
+#6-masala
+
+"""sonni raqamlari yigindisi va raqamlari soni"""
+
+# def raqam_hisobla (a):
+#     i=0
+#     s=0
+#     while a!=0 :
+#        s+=a%10
+#        a//=10
+#        i+=1
+#     return s,i
+# a = int(input())
+# print(raqam_hisobla(a))
+
+#7-masala
+
+""" sonni raqamlari teskarsini chiqarib beruvchi funksiya """
+
+# def teskari_chiqar(a) :
+#     s = 0
+#     while a!=0 :
+#         s = s*10+a%10
+#         a//=10
+#     return s
+# a = int(input())
+# print(teskari_chiqar(a))
+
+#8-masala
+
+""" sonni oxiriga raqam qoshadi"""
+
+# def son_kirit(a,k):
+#     return a*10+k
+# a = int(input())
+# k = int(input())
+# print(son_kirit(a,k))
+
+#9-masala
+
+"""sonni chap tarafiga raqam qoshadi"""
+
+# def chap_qosh(a,k) :
+#     i=0
+#     s=a
+#     while a!=0 :
+#         a//=10
+#         i+=1
+#     return k*pow(10,i)+s
+# a = int(input())
+# k = int(input())
+# print(chap_qosh(a,k))
+
+#10-masala
+
+""" sonni teskarisni chiqarib beruvchi funksiya """
+
+# def swap(a,k) :
+#     a = a+k
+#     k = a-k
+#     a = a-k
+#     return a,k
+# a = int(input("a = "))
+# k = int(input("k = "))
+#print(swap(a,k))
+
+#11 - masala
+
+""" 2 sonni kichigini topuvchi funksiya """
+
+# def min(a,b) :
+#     if a > b :
+#         return b
+#     if a<b :
+#         return a
+# a = int(input())
+# b = int(input())
+# print(min(a,b))
+
+#12-masala
+
+""" 3 ta sonni o'sish tartibida joylash"""
+
+# def tartibla(a,b,c) :
+#     if a>b and b>c :
+#         return c,b,a
+#     if a>c and c>b :
+#         return b,c,a
+#     if b>a and a>c :
+#         return c,a,b
+#     if b>c and c>a :
+#         return a,c,b
+#     if c>a and a>b :
+#         return b,a,c
+#     if c>b and b>a :
+#         return a,b,c
+# a,b,c = int(input()),int(input()),int(input())
+# print(tartibla(a,b,c))
+
+#14-masala
+
+""" a,b,c sonlari almashtirib beradigan funksiya"""
+
+# def almashtir(a,b,c) :#a =3 ,b =4,c =5
+#     m = c # m = 5
+#     c = b # c = 4
+#     b = a # b = 3
+#     a = m # a = 5
+#     print(a,b,c)
+# a,b,c = int(input()),int(input()),int(input())
+# almashtir(a,b,c)
+
+#16-masala
+
+"""sonni ishorasini aniqlovchi funksiya """
+
+# def ishora_aniqla(a):
+#     if a>0 :
+#         print('+')
+#     if a<0 :
+#         print('-')
+# a = int(input())
+# ishora_aniqla(a)
+
+#17-masala
+
+"""kvadrat tenglamani ildizlari soni"""
+
+# def ildiz_top(a,b,c):
+#     if b*b-4*a*c >0:
+#         print("2 ta yechimga ega")
+#     elif b*b-4*a*c==0 :
+#         print('bitta yechimga ega ')
+#     else :
+#         print("yechimga ega emas ")
+# a,b,c = int(input()),int(input()),int(input())
+# ildiz_top(a,b,c)
+
+#18-masala
+
+"""doira yuzini hisoblash"""
+
+# def doira_hisobla(a) :
+#     return a*a*math.pi
+# a = int(input())
+
+#19-masala
+
+"""markazi bir nuqtada bolgan ikki doira yuzasi"""
+
+# def yuza_top(r1,r2):
+#     if r1>r2 :
+#         return r1*r1*math.pi-r2*r2*math.pi
+#     if r1<r2 :
+#         return r2*r2*math.pi-r1*r1*math.pi
+# r1,r2 = int(input()),int(input())
+# print(yuza_top(r1,r2))
+
+#20-masala
+
+"""uchburchakni peremetri"""
+
+# def peremetr_top(a,b):
+#     c = math.sqrt(a*a+b*b)
+#     return a+b+c
+# a,b= int(input()),int(input())
+# print(peremetr_top(a,b))
+
+
+#24 - masala
+
+"""sonni juft toqligini ifodalovchi funksiya"""
+
+# def toq_aniqla(a):
+#     return a%2==0
+# a = int(input())
+# print(toq_aniqla(a))
+
+#25-masala
+
+""" sonni kvadrati ekanini tekshiruvchi funksiya """
+
+# def tekshir(a) :
+#     son = bool
+#     i = 1
+#     while a>i :
+#         if a/i==i :
+#             return i/i==1
+#             break
+#         i+=1
+# a = int(input())
+# print(tekshir(a))
+
+#26-masala
+
+# def aniqla(a) :
+#     i=5
+#     son = a%i
+#     while a>i :
+#         if a%i==0 and son%5==0:
+#             return 'true'
+#         i*=5
+# a = int(input())
+# print(aniqla(a))
+
+#28-masala
+
+# def tub_aniqla(n):
+#     son = bool
+#     i=2
+#     while i<n :
+#         if n%i==0 :
+#             return 'tub son emas'
+#         i+=1
+#         if n%i!=0 :
+#             son = 1
+#     if son :
+#         return 'tub son'
+# n = int(input())
+# print(tub_aniqla(n))
+
+#29-masala
+
+"""sonni raqamlari sonini qaytaradi"""
+
+# def qaytar(n) :
+#     i = 0
+#     while n!=0 :
+#         i+=1
+#         n//=10
+#     return i
+# n = int(input())
+# print(qaytar(n))
+
+#30-masala
+
+"""sonni n-raqamini qaytaruvchi funksiya"""
+
+# def raqam_aniqla(a,n):
+#     son = bool
+#     while a!=0 :
+#         if a%10==n :
+#             son = 0
+#             return n
+#         a//=10
+#     if son :
+#         return -1
+# a = int(input())
+# n = int(input())
+# print(raqam_aniqla(a,n))
+
+#31-masala
+
+"""faktaryalni qaytaruvchi funksiya"""
+
+# def faktoryal(n):
+#     kopaytma = 1
+#     for x in range(1,n+1):
+#         kopaytma*=x
+#     return kopaytma
+# n = int(input())
+# print(faktoryal(n))
+
+#37-masala
+
+"""darajani topuvchi funksiya"""
+
+# def daraja_top(a,k):
+#     kopaytma = 1
+#     for x in range(1,k) :
+#         kopaytma*=a
+#     return kopaytma
+# a = int(input())
+# k = int(input())
+# print(daraja_top(a,k))
+
+#46-masala
+
+"""ekubni topuvchi funksiya"""
+
+# def ekub(a,b):
+#     if a>b :
+#         i=b
+#         while b!=0 :
+#            if a%i==0 and b%i==0 :
+#                return i
+#            i-=1
+#     if a<b :
+#         i=a
+#         while a!=0 :
+#             if a%i==0 and b%i==0 :
+#                 return i
+#             i-=1
+# a = int(input())
+# b = int(input())
+# print(ekub(a,b))
+
+#47-masala
+
+"""ekukni topuvchi funksiya"""
+
+def ekuk(a,b) :
+    if a>b :
+        i =b
+        while b!=0 :
+            if a%i==0 and b%i==0 :
+                return a*b/i
+            i-=1
+    if a<b :
+        i=a
+        while a!=0 :
+            if a%i==0 and b%i==0 :
+                return a*b/i
+            i-=1
+a,b = int(input()),int(input())
+print(ekuk(a,b))
